@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a822e1af-0486-41ab-849f-91cc7729fa32",
+		"name": "Lab 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/fit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " [\r\n        {\r\n            \"serial_no\": 470,\r\n            \"gre_score\": 308,\r\n            \"toefl_score\": 115,\r\n            \"university_rating\": 3,\r\n            \"sop\": 4.01,\r\n            \"lor\": 2.88,\r\n            \"cgpa\": 8.77,\r\n            \"research\": 1,\r\n            \"admission_points\": 78.34758799660176\r\n        },\r\n        {\r\n            \"serial_no\": 470,\r\n            \"gre_score\": 308,\r\n            \"toefl_score\": 115,\r\n            \"university_rating\": 3,\r\n            \"sop\": 4.01,\r\n            \"lor\": 2.88,\r\n            \"cgpa\": 8.00,\r\n            \"research\": 1,\r\n            \"admission_points\": 62.78408546097669\r\n        },\r\n        {\r\n            \"serial_no\": 470,\r\n            \"gre_score\": 308,\r\n            \"toefl_score\": 115,\r\n            \"university_rating\": 3,\r\n            \"sop\": 4.01,\r\n            \"lor\": 2.88,\r\n            \"cgpa\": 8.00,\r\n            \"research\": 1,\r\n            \"admission_points\": 62.78408546097669\r\n        }      \r\n    ]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/fit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"fit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"serial_no\": 470,\r\n        \"gre_score\": 308,\r\n        \"toefl_score\": 115,\r\n        \"university_rating\": 3,\r\n        \"sop\": 4.01,\r\n        \"lor\": 2.88,\r\n        \"cgpa\": 8.77,\r\n        \"research\": 1\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
