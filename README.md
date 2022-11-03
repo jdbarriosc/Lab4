@@ -12,3 +12,5 @@ Para finalmente correr el servidor:
 - uvicorn main:app --reload
 
 Los requests se enviaran al http://127.0.0.1:8000/
+- http://127.0.0.1:8000/predict
+- http://127.0.0.1:8000/fit
